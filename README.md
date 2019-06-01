@@ -1,5 +1,8 @@
 # CryptoCurrent
+
 A cryptocurrency tracking app built on the MERN stack
+
+![Cryptocurrent demo](cc_720.gif)
 
 ## Instructions
 
