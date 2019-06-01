@@ -13,7 +13,7 @@ passport.deserializeUser((id, done) => {
 	console.log('DEserialize ... called')
 	User.findOne(
 		{ _id: id },
-		'firstName',
+		'firstName', //properties to include in user object
 		(err, user) => {
 			console.log('======= DESERIALIZE USER CALLED ======')
 			console.log(user)

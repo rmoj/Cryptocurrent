@@ -32,7 +32,8 @@ const strategy = new GoogleStrategy(
 				console.log('====== post save ....')
 				const newGoogleUser = new User({
 					googleId: id,
-					firstName: name.givenName
+					firstName: name.givenName,
+					watchlist: JSON.stringify({ coins: [{ symbol: 'BTC' }, { symbol: 'ETH' }, { symbol: 'XRP' }] })
 				})
 				// save this user
 				newGoogleUser.save((err, savedUser) => {

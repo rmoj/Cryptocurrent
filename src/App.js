@@ -4,6 +4,7 @@ import { Route } from 'react-router-dom'
 import './App.css'
 import Home from './components/Home'
 import Nav from './components/Nav/Nav'
+import CoinTable from './components/CoinTable/CoinTable'
 
 class App extends Component {
 
@@ -44,13 +45,18 @@ class App extends Component {
 		})
 	}
 
+
 	render() {
+
 		return (
 			<div className="App">
 				<Nav user={this.state.user} logout={this.logout} loggedIn={this.state.loggedIn} />
-				<Route exact path="/" render={() => <Home user={this.state.user} />} />
+				{this.state.user &&
+					<Route exact path="/" render={() => <CoinTable userId={this.state.user._id} />} />
+				}
 			</div>
 		)
+
 	}
 }
 

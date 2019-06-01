@@ -1,0 +1,17 @@
+.Details {
+  padding: 10px;
+}
+.Title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.tabs {
+  padding: 0 150px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.d {
+  background-color: '#ffaa00';
+}

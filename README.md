@@ -1,4 +1,5 @@
 # CryptoCurrent
+A cryptocurrency tracking app built on the MERN stack
 
 ## Instructions
 
@@ -20,6 +21,19 @@
 
 `npm run prod`
 
-## Built With
+## Requirements
+
+[MongoDB](https://www.mongodb.com/),
+[Express](https://expressjs.com/),
+[React](https://reactjs.org/),
+[Node](https://nodejs.org/),
+[React Router](https://www.npmjs.com/package/react-router-dom),
+[Passport](http://www.passportjs.org/),
+[React Dynamic Modal V2](https://www.npmjs.com/package/react-dynamic-modal-v2),
+[React-Table](https://github.com/tannerlinsley/react-table),
+[Recharts](http://recharts.org),
+[Semantic UI React](https://react.semantic-ui.com/)
+
+
 
 

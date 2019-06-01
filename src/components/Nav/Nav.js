@@ -13,7 +13,7 @@ const Nav = props => {
           <Image src={logo} size='medium'></Image>
         </Menu.Item>
 
-        <Menu.Item><Header>Welcome, {props.user.firstName}!</Header></Menu.Item>
+        <Menu.Item header>Welcome, {props.user.firstName}!</Menu.Item>
 
         <Menu.Item as={NavLink} to="#" name="logout" onClick={props.logout}>
           Logout

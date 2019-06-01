@@ -7,7 +7,7 @@ if (process.env.MONGODB_URI) {
 	mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useCreateIndex: true })
 	MONGO_URL = process.env.MONGODB_URI
 } else {
-	mongoose.connect(MONGO_LOCAL_URL, { useNewUrlParser: true, useCreateIndex: true }) // local mongo url
+	mongoose.connect(MONGO_LOCAL_URL, { useNewUrlParser: true, useCreateIndex: true, useFindAndModify: false }) // local mongo url
 	MONGO_URL = MONGO_LOCAL_URL
 }
 
